@@ -21,7 +21,9 @@ public class EnemySpawner : MonoBehaviour
     }
     public Vector3 RandomSpawnPos()
     {
-        return new Vector3(Random.Range(-8, 6), 0, 8);
+        int[] validEvenNumbers = { -8, -6, -4, -2, 0, 2, 4, 6 };
+        int x = validEvenNumbers[Random.Range(0, validEvenNumbers.Length)];
+        return new Vector3(x, 0, 8);
     }
 
 }
