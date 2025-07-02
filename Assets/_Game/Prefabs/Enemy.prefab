@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89814966912799249b0b607d34b33f5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 1
   maxHealth: 100
   healthSlider: {fileID: 2028585653341778082}
   obstacleLayer:
@@ -382,7 +382,7 @@ MonoBehaviour:
   frontGO: {fileID: 0}
   damage: 10
   attackRate: 1
-  animator: {fileID: 4475965482001639581}
+  animator: {fileID: 7369067465071853862}
 --- !u!136 &8916508760485957142
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -442,7 +442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6347660482616854536}
-  - component: {fileID: 4475965482001639581}
+  - component: {fileID: 7369067465071853862}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -469,7 +469,7 @@ Transform:
   - {fileID: 242214969765624093}
   m_Father: {fileID: 9102525581315685791}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &4475965482001639581
+--- !u!95 &7369067465071853862
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0

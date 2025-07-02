@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 238790730349004465}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -16}
+  m_LocalPosition: {x: 0, y: 0, z: -18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0feb002803eec944f9ac006db9b80988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canFire: 0
   fireRate: 2
   bulletPrefab: {fileID: 9055340031763392036, guid: 37a6fc439ebbae54896d591c7bc6dee4, type: 3}
   bulletSpawnPoint: {fileID: 6348961182764902271}
@@ -73,7 +74,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &415830910590222117
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +272,7 @@ Transform:
   m_GameObject: {fileID: 4101117447688738866}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.556, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -304,7 +305,7 @@ Transform:
   m_GameObject: {fileID: 6348961182764902271}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.334, z: 0.612}
+  m_LocalPosition: {x: 0, y: 0.89, z: 0.612}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -396,7 +397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4081197871200445175, guid: 6a57a631037cfcc4ebaaa5147a3dac42, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1
+      value: 1.556
       objectReference: {fileID: 0}
     - target: {fileID: 4081197871200445175, guid: 6a57a631037cfcc4ebaaa5147a3dac42, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
