@@ -323,13 +323,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthBarCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 113268180527118432, guid: 6a57a631037cfcc4ebaaa5147a3dac42, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1229681351538899835, guid: 6a57a631037cfcc4ebaaa5147a3dac42, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1229681351538899835, guid: 6a57a631037cfcc4ebaaa5147a3dac42, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4081197871200445175, guid: 6a57a631037cfcc4ebaaa5147a3dac42, type: 3}
       propertyPath: m_Pivot.x
@@ -422,6 +426,10 @@ PrefabInstance:
     - target: {fileID: 5721637096547402283, guid: 6a57a631037cfcc4ebaaa5147a3dac42, type: 3}
       propertyPath: m_Color.r
       value: 0.4718391
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208328417240098036, guid: 6a57a631037cfcc4ebaaa5147a3dac42, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

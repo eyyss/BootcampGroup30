@@ -3,6 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement Singelton;
     public float moveSpeed = 5f;
     public float gravity = -9.81f;
 
@@ -10,6 +11,11 @@ public class PlayerMovement : MonoBehaviour
     private Transform cam;
     private Vector3 velocity;
     private bool isGrounded;
+    public bool CanMove = true;
+    void Awake()
+    {
+        Singelton = this;
+    }
 
     void Start()
     {
@@ -40,12 +46,13 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 move = (camForward * inputZ + camRight * inputX).normalized;
 
-        controller.Move(move * moveSpeed * Time.deltaTime);
+        if (CanMove)
+            controller.Move(move * moveSpeed * Time.deltaTime);
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
-        if (move != Vector3.zero)
+        if (move != Vector3.zero && CanMove)
         {
             transform.forward = move;
         }
