@@ -2,23 +2,20 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Turret : MonoBehaviour, IPlayerDamageable, IPlaceable
+public class Turret : Unit
 {
     public bool canFire = false;
     public float fireRate = 1;
     private float fireTimer;
     public GameObject bulletPrefab;
     public GameObject bulletSpawnPoint;
-    private float health;
-    public float maxHealth = 100;
-    public Slider healthSlider;
-    void Awake()
+
+    public override void Awake()
     {
+        base.Awake();
         fireTimer = fireRate;
-        health = maxHealth;
-        healthSlider.maxValue = maxHealth;
-        healthSlider.value = health;
     }
+
     public void Update()
     {
         fireTimer += Time.deltaTime;
@@ -46,37 +43,21 @@ public class Turret : MonoBehaviour, IPlayerDamageable, IPlaceable
             });
     }
 
-    public void TakeDamage(float damage)
+    public override void TakeDamage(float damage)
     {
-        health -= damage;
-        healthSlider.value = health;
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-        }
+        base.TakeDamage(damage);
     }
 
-    public void OnTake()
+    public override void OnTake()
     {
-        healthSlider.gameObject.SetActive(false);
+        base.OnTake();
         canFire = false;
     }
 
-    public void OnPlace()
+    public override void OnPlace()
     {
+        base.OnPlace();
         fireTimer = 0;
-        healthSlider.gameObject.SetActive(true);
         canFire = true;
-
-
-        Vector3 startPos = transform.position + Vector3.up * 0.5f;
-        transform.position = startPos;
-        transform.DOMoveY(transform.position.y - 0.5f, 0.4f)
-            .SetEase(Ease.OutBounce);
-
-        transform.DOScale(Vector3.one * 1.1f, 0.1f)
-            .SetLoops(2, LoopType.Yoyo);
-
-        transform.DORotate(Vector3.zero, 0.3f).SetEase(Ease.InOutSine);
     }
 }

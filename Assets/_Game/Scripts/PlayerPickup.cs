@@ -2,12 +2,17 @@ using UnityEngine;
 
 public class PlayerPickup : MonoBehaviour
 {
+    public static PlayerPickup Singelton;
     public Transform holdPoint;
     public float pickupRange = 2f;
-    private GameObject placeableObj;
+    public GameObject placeableObj;
     public Transform placeCheckPoint;
     public Transform selectedZoneDebugTransform;
     private PlaceZone currentPlaceZone;
+    void Awake()
+    {
+        Singelton = this;
+    }
     void Update()
     {
         var hits = Physics.OverlapSphere(placeCheckPoint.position, pickupRange);
@@ -65,6 +70,25 @@ public class PlayerPickup : MonoBehaviour
         }
 
     }
+
+    public void Take(GameObject takeObj)
+    {
+        if (placeableObj == null)
+        {
+            if (takeObj.TryGetComponent(out IPlaceable placeable))
+            {
+                if (takeObj.transform.parent != null && takeObj.transform.parent.TryGetComponent(out PlaceZone placeZone))
+                {
+                    placeZone.UnPlace();
+                }
+                takeObj.transform.position = holdPoint.position;
+                takeObj.transform.SetParent(holdPoint.transform);
+                placeableObj = takeObj;
+                placeable.OnTake();
+            }
+        }
+    }
+
     void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
