@@ -21,6 +21,7 @@ public class UnitCard : MonoBehaviour
             {
                 var spawnedObj = Instantiate(data.prefab);
                 PlayerPickup.Singelton.Take(spawnedObj);
+                Shop.Singelton.ExitShop();
             }
         });
     }
