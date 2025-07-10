@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Shop : MonoBehaviour, IInteractable
 {
     public static Shop Singelton;
-    public GameObject interactInputInfo;
     public CinemachineCamera gameplayCamera, shopCamera;
     public List<UnitCardData> cardDatas;
     public UnitCard cardPrefab;
@@ -28,29 +27,27 @@ public class Shop : MonoBehaviour, IInteractable
     }
     public void EnterShop()
     {
-        interactInputInfo.gameObject.SetActive(false);
         gameplayCamera.gameObject.SetActive(false);
         shopCamera.gameObject.SetActive(true);
-        PlayerMovement.Singelton.gameObject.SetActive(false);
+        PlayerMovement.Singelton.CanMove = false;
+        PlayerMovement.Singelton.visual.SetActive(false);
     }
     public void ExitShop()
     {
-        interactInputInfo.gameObject.SetActive(false);
         gameplayCamera.gameObject.SetActive(true);
         shopCamera.gameObject.SetActive(false);
-        PlayerMovement.Singelton.gameObject.SetActive(true);
+        PlayerMovement.Singelton.CanMove = true;
+        PlayerMovement.Singelton.visual.SetActive(true);
     }
 
     public void Enter()
     {
-        if (interactInputInfo)
-            interactInputInfo.SetActive(true);
+
     }
 
     public void Exit()
     {
-        if (interactInputInfo)
-            interactInputInfo.SetActive(false);
+
     }
 
     public void Tick()

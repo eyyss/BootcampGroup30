@@ -12,6 +12,7 @@ public class PlayerPickup : MonoBehaviour
     void Awake()
     {
         Singelton = this;
+        selectedZoneDebugTransform.SetParent(null);
     }
     void Update()
     {

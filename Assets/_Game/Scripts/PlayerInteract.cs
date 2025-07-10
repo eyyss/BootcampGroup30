@@ -17,7 +17,7 @@ public class PlayerInteract : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, InteractDistance, interactMask))
         {
-            Debug.Log(hit.collider.name);
+            //Debug.Log(hit.collider.name);
             if (hit.collider.TryGetComponent(out IInteractable _interactable))
             {
                 if (_interactable != interactable)

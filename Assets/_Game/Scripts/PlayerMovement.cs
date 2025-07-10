@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity;
     private bool isGrounded;
     public bool CanMove = true;
+    public GameObject visual;
     void Awake()
     {
         Singelton = this;

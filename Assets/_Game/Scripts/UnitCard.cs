@@ -14,9 +14,11 @@ public class UnitCard : MonoBehaviour
         iconImage.sprite = data.icon;
         nameText.text = data.unitName;
         descriptionText.text = data.description;
-        priceText.text = data.price.ToString();
+        priceText.text = "Price: " + data.price.ToString();
         buyButton.onClick.AddListener(delegate
         {
+            if (!PlayerEconomy.Singelton.TryBuy(data)) return;
+
             if (PlayerPickup.Singelton.placeableObj == null)
             {
                 var spawnedObj = Instantiate(data.prefab);

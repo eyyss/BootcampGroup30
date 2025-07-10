@@ -28,7 +28,6 @@ public class Unit : MonoBehaviour, IPlayerDamageable, IPlaceable
     public virtual void OnTake()
     {
         healthSlider.gameObject.SetActive(false);
-
     }
     public virtual void OnPlace()
     {
