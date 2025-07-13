@@ -13,6 +13,7 @@ public class PlayerEconomy : MonoBehaviour
     void Awake()
     {
         Singelton = this;
+        moneyText.text = "Money: " + money.ToString();
     }
 
     void Update()

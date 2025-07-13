@@ -7,6 +7,7 @@ public class Unit : MonoBehaviour, IPlayerDamageable, IPlaceable
     [NonSerialized] public float health;
     public float maxHealth = 100;
     public Slider healthSlider;
+    public PlaceZone placeZone;
     public virtual void Awake()
     {
         health = maxHealth;
@@ -29,10 +30,19 @@ public class Unit : MonoBehaviour, IPlayerDamageable, IPlaceable
     {
         healthSlider.gameObject.SetActive(false);
     }
-    public virtual void OnPlace()
+    public virtual void OnPlace(PlaceZone _placeZone)
     {
+        placeZone = _placeZone;
         healthSlider.gameObject.SetActive(true);
         transform.DoSpawnTween();
+    }
+    void OnDestroy()
+    {
+        if (placeZone) placeZone.UnPlace();
+    }
+    void OnDisable()
+    {
+        if (placeZone) placeZone.UnPlace();
     }
 
 

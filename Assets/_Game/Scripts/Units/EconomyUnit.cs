@@ -9,9 +9,9 @@ public class EconomyUnit : Unit
     private float spawnTimer;
     public float spawnTime = 5f;
 
-    public override void OnPlace()
+    public override void OnPlace(PlaceZone _placeZone)
     {
-        base.OnPlace();
+        base.OnPlace(_placeZone);
         canSpawn = true;
     }
 

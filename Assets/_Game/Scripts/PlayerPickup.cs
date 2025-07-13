@@ -42,7 +42,7 @@ public class PlayerPickup : MonoBehaviour
                 placeableObj.transform.position = currentPlaceZone.transform.position;
                 placeableObj.transform.SetParent(currentPlaceZone.transform);
                 placeableObj.transform.rotation = Quaternion.Euler(Vector3.zero);
-                placeableObj.GetComponent<IPlaceable>().OnPlace();
+                placeableObj.GetComponent<IPlaceable>().OnPlace(currentPlaceZone);
                 currentPlaceZone = null;
                 placeableObj = null;
                 selectedZoneDebugTransform.position = Vector3.zero + Vector3.down;

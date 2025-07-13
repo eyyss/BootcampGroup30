@@ -27,10 +27,9 @@ public class EnemyBase : MonoBehaviour, IDamageable
     {
         health -= damage;
         healthSlider.value = health;
-        if (health < 0)
+        if (health <= 0)
         {
             Destroy(gameObject);
-            Debug.Log("Dead");
         }
     }
 

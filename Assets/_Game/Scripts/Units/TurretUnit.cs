@@ -54,9 +54,9 @@ public class Turret : Unit
         canFire = false;
     }
 
-    public override void OnPlace()
+    public override void OnPlace(PlaceZone _placeZone)
     {
-        base.OnPlace();
+        base.OnPlace(_placeZone);
         fireTimer = 0;
         canFire = true;
     }
