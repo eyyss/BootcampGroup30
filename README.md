@@ -100,6 +100,7 @@ Karar verilmedi.
 
 
 ## Ürün Durumu: Ekran Görüntüleri
+![IMG_2419](https://github.com/user-attachments/assets/305dc723-8671-4f0e-a662-33e77fceae23)
 
 <img width="820" height="697" alt="image" src="https://github.com/user-attachments/assets/4aaa86f4-3ac3-47f3-9a5d-16f7f261cafa" />
 <img width="726" height="697" alt="image" src="https://github.com/user-attachments/assets/be1ef794-7dfe-4b54-8b4d-14abc62c22a1" />
