@@ -81,3 +81,32 @@ Karar verilmedi.
 
 - **Sprint Retrospective:** 
   - Ekip içi bazı yoğunluklar nedeniyle birinci sprintte yoğun tempolu bir çalışma planlanmamıştı, ikinci sprint için gerekli müsaitlikler yaratılıp daha yoğun tempoda çalışılacak
+ 
+  # Sprint 2
+
+- **Sprint Notları**:Tasklar Miro üzerinde gösterilmiştir.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 14 Puan
+
+- **Puan tamamlama mantığı**: Proje boyunca tamamlanması gereken puan sprint boyunca günlük 1 puan olacak şekilde tasarlanmıştır. Her sprint için tamamlanması hedeflenen puan 14'tür.
+
+- **Backlog düzeni ve Story seçimleri**: Sprint planningde yapılması gereken taskları kararlaştırdık. Miro board üzerinde takip ediliyor.
+
+- **Daily Scrum**: Daily Scrum toplantıları Whatsapp üzerinden yapıldı ve haftada bir Teams görüşmeleri ile desteklendi.. Toplantı notları Miro üzerinde bulunmaktadır. [Miro Board](https://miro.com/app/board/uXjVIi03Yns=/)
+
+
+- **Sprint board update**: Sprint board screenshot: 
+ ![2025Bootcamp - Frame 2 (1)](https://github.com/user-attachments/assets/90f456ac-96a5-4617-a7a1-f3b1a9969875)
+
+
+## Ürün Durumu: Ekran Görüntüleri
+
+<img width="820" height="697" alt="image" src="https://github.com/user-attachments/assets/4aaa86f4-3ac3-47f3-9a5d-16f7f261cafa" />
+<img width="726" height="697" alt="image" src="https://github.com/user-attachments/assets/be1ef794-7dfe-4b54-8b4d-14abc62c22a1" />
+
+- **Sprint Review**: 
+  - Can sistemi ve mağaza eklendi. Animasyonlar güncellendi. Karakter ve çevre tasarımı üzerinde çalışılmaya devam ediliyor.
+  - Sprint Review katılımcıları: Okan Göztak, Servet Ece Gündüz, Zehra Kuzu, Berat Öztürkoğlu.
+
+- **Sprint Retrospective:** 
+  - Detaylı ve zorlayıcı tasarımlar yerine vaktimizi verimli kullanıp oynama isteği yaratacak basit ama güzel tasarımlar yaratmaya karar verdik. 
