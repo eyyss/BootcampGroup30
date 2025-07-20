@@ -96,8 +96,8 @@ Karar verilmedi.
 
 
 - **Sprint board update**: Sprint board screenshot: 
- ![2025Bootcamp - Frame 2 (1)](https://github.com/user-attachments/assets/90f456ac-96a5-4617-a7a1-f3b1a9969875)
 
+![2025Bootcamp - Frame 3 (1)](https://github.com/user-attachments/assets/f07e74f2-2c54-46a6-b707-503c1c173969)
 
 ## Ürün Durumu: Ekran Görüntüleri
 ![IMG_2419](https://github.com/user-attachments/assets/305dc723-8671-4f0e-a662-33e77fceae23)
