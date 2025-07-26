@@ -51,9 +51,14 @@ public class EnemyBase : MonoBehaviour, IDamageable
         else frontGO = null;
 
         //move
-        if (frontGO == null) transform.position += transform.forward * moveSpeed * Time.deltaTime;
+        if (frontGO == null) 
+        {
+            transform.position += transform.forward * moveSpeed * Time.deltaTime;
+            animator.SetBool("IsMove", true);
+        } 
         else//attack
         {
+            animator.SetBool("IsMove", false);
             attackTimer += Time.deltaTime;
             if (attackTimer > attackRate && frontGO.TryGetComponent(out IPlayerDamageable damageable))
             {
