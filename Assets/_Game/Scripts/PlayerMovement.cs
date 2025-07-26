@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public static PlayerMovement Singelton;
     public float moveSpeed = 5f;
+    public float rotateSpeed = 7f;
     public float gravity = -9.81f;
 
     private CharacterController controller;
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     public bool CanMove = true;
     public GameObject visual;
+    public Animator animator;
     void Awake()
     {
         Singelton = this;
@@ -55,7 +57,16 @@ public class PlayerMovement : MonoBehaviour
 
         if (move != Vector3.zero && CanMove)
         {
-            transform.forward = move;
+            transform.forward = Vector3.Slerp(transform.forward, move, Time.deltaTime * rotateSpeed);
+        }
+
+        if (move.magnitude > 0.1)
+        {
+            animator.SetBool("IsMove", true);
+        }
+        else
+        {
+            animator.SetBool("IsMove", false);
         }
     }
 }
