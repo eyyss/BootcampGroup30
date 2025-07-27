@@ -17,6 +17,7 @@ public class EnemyBase : MonoBehaviour, IDamageable
     public float attackRate = 1;
     private float attackTimer;
     public Animator animator;
+    private Collider coll;
 
     public bool IsDead()
     {
@@ -27,14 +28,20 @@ public class EnemyBase : MonoBehaviour, IDamageable
     {
         health -= damage;
         healthSlider.value = health;
-        if (health <= 0)
+        if (health <= 0 && !isDead)
         {
-            Destroy(gameObject);
+            EnemySpawner.Singelton.OnEnemyDeath(gameObject);
+            isDead = true;
+            healthSlider.gameObject.SetActive(false);
+            coll.enabled = false;
+            animator.CrossFade("Die", 0.2f);
+            //Destroy(gameObject);
         }
     }
 
     void Awake()
     {
+        coll = GetComponent<Collider>();
         health = maxHealth;
         healthSlider.maxValue = maxHealth;
         healthSlider.value = health;
@@ -42,6 +49,7 @@ public class EnemyBase : MonoBehaviour, IDamageable
     }
     void Update()
     {
+        if (isDead) return;
 
         if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, obstacleCheckDistance, obstacleLayer))
         {
@@ -51,11 +59,11 @@ public class EnemyBase : MonoBehaviour, IDamageable
         else frontGO = null;
 
         //move
-        if (frontGO == null) 
+        if (frontGO == null)
         {
             transform.position += transform.forward * moveSpeed * Time.deltaTime;
             animator.SetBool("IsMove", true);
-        } 
+        }
         else//attack
         {
             animator.SetBool("IsMove", false);
@@ -63,15 +71,18 @@ public class EnemyBase : MonoBehaviour, IDamageable
             if (attackTimer > attackRate && frontGO.TryGetComponent(out IPlayerDamageable damageable))
             {
                 attackTimer = 0;
-                Attack(damageable);
+                Attack();
             }
         }
 
     }
-    private void Attack(IPlayerDamageable damageable)
+    private void Attack()
     {
-        damageable.TakeDamage(damage);
         animator.SetTrigger("Attack");
+        if (frontGO.TryGetComponent(out IPlayerDamageable damageable))
+        {
+            damageable.TakeDamage(damage);
+        }
     }
     void OnDrawGizmos()
     {

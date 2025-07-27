@@ -6,6 +6,7 @@ public class PlayerBase : MonoBehaviour, IPlayerDamageable
     private float health;
     public float maxHealth = 100;
     public Slider healthSlider;
+    private bool isDead = false;
     private void Awake()
     {
         health = maxHealth;
@@ -16,8 +17,10 @@ public class PlayerBase : MonoBehaviour, IPlayerDamageable
     {
         health -= damage;
         healthSlider.value = health;
-        if (health <= 0)
+        if (health <= 0 && !isDead)
         {
+            isDead = true;
+            UIManager.Singelton.OpenDefeatPanel();
             Debug.Log("Kaybettin");
         }
     }

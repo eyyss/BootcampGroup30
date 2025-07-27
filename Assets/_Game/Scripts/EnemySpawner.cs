@@ -1,31 +1,76 @@
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public float spawnRate;
-    private float spawnTimer;
-    public List<GameObject> enemys;
-    void Update()
+    public static EnemySpawner Singelton;
+    public LevelData levelData;
+    public Transform spawnPoint;
+
+    private int currentWave = 0;
+    private List<GameObject> aliveEnemies = new List<GameObject>();
+
+    void Awake()
     {
-        spawnTimer += Time.deltaTime;
-        if (spawnTimer > spawnRate)
+        Singelton = this;
+    }
+
+    void Start()
+    {
+        StartCoroutine(SpawnWaves());
+    }
+
+    IEnumerator SpawnWaves()
+    {
+        while (currentWave < levelData.waves.Count)
         {
-            SpawnEnemy();
-            spawnTimer = 0;
+            if (currentWave == levelData.waves.Count - 1)
+            {
+                Debug.Log("Final Wave!");
+                // UI: Show final wave text
+            }
+
+            yield return StartCoroutine(SpawnWave(levelData.waves[currentWave]));
+
+            yield return new WaitUntil(() => aliveEnemies.Count == 0);
+
+            currentWave++;
+            yield return new WaitForSeconds(levelData.timeBetweenWaves);
+        }
+
+        Debug.Log("All waves completed!");
+
+        UIManager.Singelton.OpenVictoryPanel();
+    }
+
+
+    IEnumerator SpawnWave(Wave wave)
+    {
+        foreach (var enemyInfo in wave.enemies)
+        {
+            for (int i = 0; i < enemyInfo.count; i++)
+            {
+                if (Random.value <= enemyInfo.spawnChance)
+                {
+                    GameObject enemy = Instantiate(enemyInfo.enemyPrefab, GetRandomSpawnPos(), enemyInfo.enemyPrefab.transform.rotation);
+                    aliveEnemies.Add(enemy);
+
+                    yield return new WaitForSeconds(0.2f);
+                }
+            }
         }
     }
-    public void SpawnEnemy()
+
+    public void OnEnemyDeath(GameObject enemy)
     {
-        GameObject prefab = enemys[Random.Range(0, enemys.Count)];
-        Instantiate(prefab, RandomSpawnPos(), prefab.transform.rotation);
+        aliveEnemies.Remove(enemy);
     }
-    public Vector3 RandomSpawnPos()
+
+    Vector3 GetRandomSpawnPos()
     {
         int[] validEvenNumbers = { -8, -6, -4, -2, 0, 2, 4, 6 };
         int x = validEvenNumbers[Random.Range(0, validEvenNumbers.Length)];
         return new Vector3(x, 0, 15);
     }
-
 }

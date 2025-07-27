@@ -48,12 +48,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0feb002803eec944f9ac006db9b80988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
+  healthSlider: {fileID: 9136203712619763771}
+  placeZone: {fileID: 0}
   canFire: 0
   fireRate: 2
   bulletPrefab: {fileID: 9055340031763392036, guid: 37a6fc439ebbae54896d591c7bc6dee4, type: 3}
   bulletSpawnPoint: {fileID: 6348961182764902271}
-  maxHealth: 100
-  healthSlider: {fileID: 9136203712619763771}
 --- !u!65 &1055400688886756390
 BoxCollider:
   m_ObjectHideFlags: 0

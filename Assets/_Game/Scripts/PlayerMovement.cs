@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
             transform.forward = Vector3.Slerp(transform.forward, move, Time.deltaTime * rotateSpeed);
         }
 
-        if (move.magnitude > 0.1)
+        if (move.magnitude > 0.1 && CanMove)
         {
             animator.SetBool("IsMove", true);
         }
