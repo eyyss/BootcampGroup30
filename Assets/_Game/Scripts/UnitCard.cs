@@ -14,7 +14,7 @@ public class UnitCard : MonoBehaviour
         iconImage.sprite = data.icon;
         nameText.text = data.unitName;
         descriptionText.text = data.description;
-        priceText.text = "Price: " + data.price.ToString();
+        priceText.text = "Fiyat: " + data.price.ToString();
         buyButton.onClick.AddListener(delegate
         {
             if (!PlayerEconomy.Singelton.TryBuy(data)) return;

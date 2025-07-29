@@ -13,7 +13,7 @@ public class PlayerEconomy : MonoBehaviour
     void Awake()
     {
         Singelton = this;
-        moneyText.text = "Money: " + money.ToString();
+        moneyText.text = "Para: " + money.ToString();
     }
 
     void Update()
@@ -22,7 +22,7 @@ public class PlayerEconomy : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             money += 100;
-            moneyText.text = "Money: " + money.ToString();
+            moneyText.text = "Para: " + money.ToString();
         }
 #endif
 
@@ -34,7 +34,7 @@ public class PlayerEconomy : MonoBehaviour
                 moneyComp.CollectWorld(transform.position + Vector3.up * 0.5f, () =>
                 {
                     money += moneyComp.value;
-                    moneyText.text = "Money: " + money.ToString();
+                    moneyText.text = "Para: " + money.ToString();
 
                     if (collectSound != null)
                         AudioSource.PlayClipAtPoint(collectSound, transform.position);
@@ -49,7 +49,7 @@ public class PlayerEconomy : MonoBehaviour
     {
         if (data.price > money) return false;
         money -= (int)data.price;
-        moneyText.text = "Money: " + money.ToString();
+        moneyText.text = "Para: " + money.ToString();
         return true;
     }
 }

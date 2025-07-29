@@ -12,6 +12,7 @@ public class Shop : MonoBehaviour, IInteractable
     public UnitCard cardPrefab;
     public Transform unitPanel;
     public Button exitButton;
+    private float shopTimer;
     void Awake()
     {
         Singelton = this;
@@ -30,16 +31,18 @@ public class Shop : MonoBehaviour, IInteractable
     {
         //gameplayCamera.gameObject.SetActive(false);
         //shopCamera.gameObject.SetActive(true);
+        shopTimer = 0;
         shopCanvas.SetActive(true);
-        PlayerMovement.Singelton.CanMove = false;
+        PlayerMovement.Singelton.SetMove(false);
         //PlayerMovement.Singelton.visual.SetActive(false);
     }
     public void ExitShop()
     {
         //gameplayCamera.gameObject.SetActive(true);
         //shopCamera.gameObject.SetActive(false);
+        shopTimer = 0;
         shopCanvas.SetActive(false);
-        PlayerMovement.Singelton.CanMove = true;
+        PlayerMovement.Singelton.SetMove(true);
         //PlayerMovement.Singelton.visual.SetActive(true);
     }
 
@@ -55,14 +58,21 @@ public class Shop : MonoBehaviour, IInteractable
 
     public void Tick()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !shopCamera.gameObject.activeSelf)
+        if (Input.GetKeyDown(KeyCode.E) && !shopCanvas.activeSelf)
         {
             EnterShop();
         }
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && shopCamera.gameObject.activeInHierarchy)
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ExitShop();
+        }
+
+        if (shopCanvas.activeSelf)
+            shopTimer += Time.deltaTime;
+        if (Input.GetKeyDown(KeyCode.E) && shopTimer > 0.1f)
         {
             ExitShop();
         }

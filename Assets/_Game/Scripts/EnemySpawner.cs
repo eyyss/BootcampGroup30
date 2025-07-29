@@ -11,6 +11,9 @@ public class EnemySpawner : MonoBehaviour
     private int currentWave = 0;
     private List<GameObject> aliveEnemies = new List<GameObject>();
 
+    public int preparationDuration = 4;
+
+
     void Awake()
     {
         Singelton = this;
@@ -18,6 +21,16 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
+        StartCoroutine(PreparationAndSpawn());
+    }
+
+    IEnumerator PreparationAndSpawn()
+    {
+
+        UIManager.Singelton.OpenPreparationPanel();
+        yield return new WaitForSeconds(preparationDuration);
+        UIManager.Singelton.ClosePreparationPanel();
+
         StartCoroutine(SpawnWaves());
     }
 
@@ -28,11 +41,11 @@ public class EnemySpawner : MonoBehaviour
             if (currentWave == levelData.waves.Count - 1)
             {
                 Debug.Log("Final Wave!");
+                UIManager.Singelton.OpenFinalWavePanel();
                 // UI: Show final wave text
             }
 
             yield return StartCoroutine(SpawnWave(levelData.waves[currentWave]));
-
             yield return new WaitUntil(() => aliveEnemies.Count == 0);
 
             currentWave++;
@@ -40,10 +53,8 @@ public class EnemySpawner : MonoBehaviour
         }
 
         Debug.Log("All waves completed!");
-
         UIManager.Singelton.OpenVictoryPanel();
     }
-
 
     IEnumerator SpawnWave(Wave wave)
     {
@@ -55,7 +66,6 @@ public class EnemySpawner : MonoBehaviour
                 {
                     GameObject enemy = Instantiate(enemyInfo.enemyPrefab, GetRandomSpawnPos(), enemyInfo.enemyPrefab.transform.rotation);
                     aliveEnemies.Add(enemy);
-
                     yield return new WaitForSeconds(0.2f);
                 }
             }

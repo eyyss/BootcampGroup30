@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 namespace HeneGames.DialogueSystem
 {
@@ -52,10 +53,13 @@ namespace HeneGames.DialogueSystem
         [Header("Next sentence input")]
         public KeyCode actionInput = KeyCode.Space;
 
+        public static UnityEvent onDialogueStart = new UnityEvent(), onDialogueEnd = new UnityEvent();
+
+
         private void Update()
         {
             //Delay timer
-            if(startDialogueDelayTimer > 0f)
+            if (startDialogueDelayTimer > 0f)
             {
                 startDialogueDelayTimer -= Time.deltaTime;
             }
@@ -108,6 +112,7 @@ namespace HeneGames.DialogueSystem
             //If last sentence remove current dialogue manager
             if (lastSentence)
             {
+                onDialogueEnd?.Invoke();
                 currentDialogueManager = null;
             }
         }
@@ -122,6 +127,8 @@ namespace HeneGames.DialogueSystem
 
             //Start displaying dialogue
             currentDialogueManager.StartDialogue();
+
+            onDialogueStart?.Invoke();
         }
 
         public void ShowSentence(DialogueCharacter _dialogueCharacter, string _message)
@@ -156,7 +163,7 @@ namespace HeneGames.DialogueSystem
 
         public bool IsProcessingDialogue()
         {
-            if(currentDialogueManager != null)
+            if (currentDialogueManager != null)
             {
                 return true;
             }
@@ -186,11 +193,11 @@ namespace HeneGames.DialogueSystem
 
             float _speed = 1f - textAnimationSpeed;
 
-            foreach(char _letter in _letters)
+            foreach (char _letter in _letters)
             {
                 _textMeshObject.text += _letter;
 
-                if(_textMeshObject.text.Length == _letters.Length)
+                if (_textMeshObject.text.Length == _letters.Length)
                 {
                     typing = false;
                 }

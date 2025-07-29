@@ -1,3 +1,4 @@
+using HeneGames.DialogueSystem;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -24,6 +25,20 @@ public class PlayerMovement : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         cam = Camera.main.transform;
+
+        DialogueUI.onDialogueStart.AddListener(delegate
+        {
+            SetMove(false);
+        });
+        DialogueUI.onDialogueEnd.AddListener(delegate
+        {
+            SetMove(true);
+        });
+    }
+
+    public void SetMove(bool state)
+    {
+        CanMove = state;
     }
 
     void Update()

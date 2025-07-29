@@ -40,7 +40,7 @@ public class Turret : Unit
                 transform
                     .DOLocalMoveZ(originalPos.z, 0.1f)
                     .SetEase(Ease.InQuad);
-            });
+            }).SetLink(gameObject);
     }
 
     public override void TakeDamage(float damage)
