@@ -1,9 +1,10 @@
 using System.Collections.Generic;
+using HeneGames.DialogueSystem;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Shop : MonoBehaviour, IInteractable
+public class Shop : MonoBehaviour
 {
     public static Shop Singelton;
     public CinemachineCamera gameplayCamera, shopCamera;
@@ -11,21 +12,35 @@ public class Shop : MonoBehaviour, IInteractable
     public List<UnitCardData> cardDatas;
     public UnitCard cardPrefab;
     public Transform unitPanel;
-    public Button exitButton;
     private float shopTimer;
+    public Button shopButton;
     void Awake()
     {
         Singelton = this;
     }
     private void Start()
     {
+        DialogueUI.onDialogueStart.AddListener(delegate
+        {
+            shopButton.interactable = false;
+            if (unitPanel.gameObject.activeSelf) ExitShop();
+        });
+        DialogueUI.onDialogueEnd.AddListener(delegate
+        {
+            shopButton.interactable = true;
+        });
+
         foreach (var item in cardDatas)
         {
             UnitCard unitCard = Instantiate(cardPrefab, unitPanel);
             unitCard.Initialize(item);
         }
 
-        exitButton.onClick.AddListener(ExitShop);
+    }
+    public void ShopButtonOnClick()
+    {
+        if (shopCanvas.activeSelf) ExitShop();
+        else EnterShop();
     }
     public void EnterShop()
     {
@@ -46,25 +61,17 @@ public class Shop : MonoBehaviour, IInteractable
         //PlayerMovement.Singelton.visual.SetActive(true);
     }
 
-    public void Enter()
+
+
+    void Update()
     {
+        if (!shopButton.interactable) return;
 
-    }
-
-    public void Exit()
-    {
-
-    }
-
-    public void Tick()
-    {
-        if (Input.GetKeyDown(KeyCode.E) && !shopCanvas.activeSelf)
+        if (Input.GetKeyDown(KeyCode.B) && !shopCanvas.activeSelf)
         {
             EnterShop();
         }
-    }
-    void Update()
-    {
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             ExitShop();
@@ -72,7 +79,7 @@ public class Shop : MonoBehaviour, IInteractable
 
         if (shopCanvas.activeSelf)
             shopTimer += Time.deltaTime;
-        if (Input.GetKeyDown(KeyCode.E) && shopTimer > 0.1f)
+        if (Input.GetKeyDown(KeyCode.B) && shopTimer > 0.1f)
         {
             ExitShop();
         }
