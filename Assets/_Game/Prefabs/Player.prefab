@@ -596,9 +596,10 @@ GameObject:
   - component: {fileID: 6249467341825182362}
   - component: {fileID: 3733526958595705780}
   - component: {fileID: 4109989045577323360}
+  - component: {fileID: 1957801126812364949}
   m_Layer: 2
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -718,6 +719,27 @@ MonoBehaviour:
     m_Bits: 4
   collectSound: {fileID: 0}
   collectEffectPrefab: {fileID: 0}
+--- !u!114 &1957801126812364949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9207602966206651655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9da6c51194ab84042bc718fd8ead8aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &3264759510941639488
 PrefabInstance:
   m_ObjectHideFlags: 0
