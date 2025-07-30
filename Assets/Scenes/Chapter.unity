@@ -4522,20 +4522,94 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.size
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.data[0].sentence
-      value: 'Chapter 2 cok iyi '
+      value: "Kan ter i\xE7inde kald\u0131m ama bir \u015Fey fark ettim. Bana de\u011Fil
+        de  sanki hedefe gidiyorlard\u0131."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.data[1].sentence
-      value: Chapter 2 deyiz
+      value: "Tabi ona gidecekler baksana \u015Fu dilsiz yarat\u0131klara."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.data[2].sentence
-      value: Alo
+      value: "Biz dilsiz de\u011Filiz!!! Bizi dilsiz k\u0131lan senin a\xE7 g\xF6zl\xFCl\xFC\u011F\xFCn."
       objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[3].sentence
+      value: "Hadi oradan yaz\u0131t\u0131 al\u0131p ne yapacaks\u0131n\u0131z"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[4].sentence
+      value: "Biz do\u011Fa ruhlar\u0131n\u0131n dilidir o. Bize konu\u015Fmay\u0131
+        o yaz\u0131t \xF6\u011Fretti, o olmadan aram\u0131zda d\xFCzende olmazd\u0131."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[5].sentence
+      value: "Dur bir dakika ben sizin olan \u015Feyi sizden korumak ad\u0131na m\u0131
+        sava\u015F\u0131yorum?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[6].sentence
+      value: "Arkana d\xF6n\xFCpte bir baksana, ka\u015Fla g\xF6z aras\u0131 zarar
+        vermi\u015Fler yaz\u0131ta."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[7].sentence
+      value: "S\xF6zlere yalanla \u015Fekil verirsin. S\xF6zlere yalanla \u015Fekil
+        verdi\u011Fin gibi hem bu bilge bayku\u015Fa hem de bize zarar verirsin."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[8].sentence
+      value: "Ne oldu nesliniz mi t\xFCkendi. kalan say\u0131l\u0131 kelimelerinizi
+        de \u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[9].sentence
+      value: "\u0130\u015Fte geliyolar!!!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[0].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f4f232e3bbe255144ab265a50f17659a, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[1].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5cf83bf9f32049f41b1fb361502c82b8, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[2].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: c1cb84c4f0ede184d928a56bcedd4ac5, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[3].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d52904a8f825d724ab17a1202410595d, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[4].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0f2b4122c3375944db0fedf49760c1ef, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[5].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ccbd6864d8edb9d41a7ab9c13912d2a8, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[6].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9c3ec529c7a5d4f48ba7208634be7e0b, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[7].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8702af60b83abb247a177bfd4c9bff29, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[8].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: b4a791fb491a1b141b5efea2f8f9f8df, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[9].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6dbad071354f3294e9ef653641a6eed5, type: 3}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.data[0].dialogueCharacter
       value: 
@@ -4548,6 +4622,34 @@ PrefabInstance:
       propertyPath: sentences.Array.data[2].dialogueCharacter
       value: 
       objectReference: {fileID: 11400000, guid: 66a942ebaf304c94f8c2434a8d84f703, type: 2}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[3].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ac10c7068b042143b28227ea5d758cb, type: 2}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[4].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 66a942ebaf304c94f8c2434a8d84f703, type: 2}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[5].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 4752645aa0d4f144783c729ff9e40e5a, type: 2}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[6].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ac10c7068b042143b28227ea5d758cb, type: 2}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[7].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 66a942ebaf304c94f8c2434a8d84f703, type: 2}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[8].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ac10c7068b042143b28227ea5d758cb, type: 2}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[9].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 4752645aa0d4f144783c729ff9e40e5a, type: 2}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: endDialogueEvent.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -8870,20 +8972,68 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.size
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.data[0].sentence
-      value: Chapter 3 deyiz
+      value: "Kan ter i\xE7inde kald\u0131m huh! Bu k\u0131r\u0131lma sesi de nedir?"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.data[1].sentence
-      value: Hayada
+      value: "G\xF6r\xFCyor musun yine zarar vermi\u015Fler."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.data[2].sentence
-      value: "Tamamd\u0131r"
+      value: "HAYIR! bu sefer g\xF6rd\xFCm. Bu sefer elinden \xE7\u0131kan ve ta\u015Fa
+        do\u011Fru hareket eden \u015Feyler g\xF6rd\xFCm!"
       objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[3].sentence
+      value: "Art\u0131k seninle u\u011Fra\u015Facak de\u011Filim yabanc\u0131. Benim
+        g\xFC\xE7lerim sayesinde bu noktaya geldik."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[4].sentence
+      value: "\u0130\u015Fte \u2026 art\u0131k uyan\u0131yorsun!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[5].sentence
+      value: "Art\u0131k di\u011Fer birimleri g\xFCc\xFCm ve etkim al\u0131na alabilirim
+        HAHAHA!!!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[6].sentence
+      value: "Damarlar\u0131m bir g\xFC\xE7 hissediyorum. Lingedak benden tarafa
+        ge\xE7. Bu sefer yaz\u0131t\u0131 ger\xE7ekten koruyaca\u011F\u0131m."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[0].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f7365f9c3da1f6f4aba528072b25d62a, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[1].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e27f42e424493564fbd397c4c4e9a406, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[2].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 036340011a2d7ab4bb0fa2e29466af1c, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[3].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7ad01495102ddba4e86b1802d8071be7, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[4].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f9630135f4897804481c8c7bf26edc51, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[5].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a9cf98ce2e94864eb39ad04478b3daa, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[6].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8486c2d456525794e95bc572deb2a5ee, type: 3}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.data[0].dialogueCharacter
       value: 
@@ -8895,7 +9045,23 @@ PrefabInstance:
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.data[2].dialogueCharacter
       value: 
+      objectReference: {fileID: 11400000, guid: 4752645aa0d4f144783c729ff9e40e5a, type: 2}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[3].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ac10c7068b042143b28227ea5d758cb, type: 2}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[4].dialogueCharacter
+      value: 
       objectReference: {fileID: 11400000, guid: 66a942ebaf304c94f8c2434a8d84f703, type: 2}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[5].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ac10c7068b042143b28227ea5d758cb, type: 2}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[6].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 4752645aa0d4f144783c729ff9e40e5a, type: 2}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: endDialogueEvent.m_PersistentCalls.m_Calls.Array.size
       value: 1
