@@ -5045,7 +5045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemySpawner: {fileID: 13953913}
-  currentChapterIndex: 0
+  currentChapterIndex: 2
   dialogues:
   - {fileID: 1470713297}
   - {fileID: 993488011}

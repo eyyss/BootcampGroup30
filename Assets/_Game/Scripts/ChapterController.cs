@@ -13,7 +13,7 @@ public class ChapterController : MonoBehaviour
     void Awake()
     {
         Singelton = this;
-        currentChapterIndex = PlayerPrefs.GetInt(SaveKeys.CURRENT_CHAPTER_INDEX, 0);
+        currentChapterIndex = PlayerPrefs.GetInt(SaveKeys.CURRENT_CHAPTER_INDEX, currentChapterIndex);
     }
     private IEnumerator Start()
     {
