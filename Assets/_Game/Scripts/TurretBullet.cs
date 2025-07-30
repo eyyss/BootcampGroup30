@@ -4,6 +4,7 @@ public class TurretBullet : MonoBehaviour
 {
     public float moveSpeed = 50;
     public float damage = 20;
+    public ParticleSystem hitEffect;
     void Start()
     {
         Destroy(gameObject, 6);
@@ -16,6 +17,7 @@ public class TurretBullet : MonoBehaviour
     {
         if (other.transform.TryGetComponent(out IDamageable damageable))
         {
+            Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
             damageable.TakeDamage(damage);
         }

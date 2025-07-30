@@ -71,6 +71,8 @@ MonoBehaviour:
   maxHealth: 100
   healthSlider: {fileID: 5260372879519720279}
   placeZone: {fileID: 0}
+  placeAudio: {fileID: 11400000, guid: 142d8e57b97b32e498ca869892b3d636, type: 2}
+  unPlaceAudio: {fileID: 11400000, guid: 63da4644f077ece4792a1071554af0ec, type: 2}
   expolsionEffectPrefab: {fileID: 4593184484909914550, guid: 233882363adf75b458acb62dc54e25e0, type: 3}
   explosionRadius: 4
   explosionDamage: 100

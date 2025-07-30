@@ -9,6 +9,8 @@ public class Unit : MonoBehaviour, IPlayerDamageable, IPlaceable
     public float maxHealth = 100;
     public Slider healthSlider;
     public PlaceZone placeZone;
+    public AudioData placeAudio;
+    public AudioData unPlaceAudio;
     public virtual void Awake()
     {
         health = maxHealth;
@@ -29,10 +31,13 @@ public class Unit : MonoBehaviour, IPlayerDamageable, IPlaceable
     }
     public virtual void OnTake()
     {
+        unPlaceAudio.Play2D(this);
         healthSlider.gameObject.SetActive(false);
     }
     public virtual void OnPlace(PlaceZone _placeZone)
     {
+        if (placeAudio)
+            placeAudio.Play2D(this);
         placeZone = _placeZone;
         healthSlider.gameObject.SetActive(true);
         transform.DoSpawnTween();

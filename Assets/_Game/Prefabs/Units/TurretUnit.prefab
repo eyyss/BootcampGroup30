@@ -51,10 +51,13 @@ MonoBehaviour:
   maxHealth: 100
   healthSlider: {fileID: 9136203712619763771}
   placeZone: {fileID: 0}
+  placeAudio: {fileID: 11400000, guid: 142d8e57b97b32e498ca869892b3d636, type: 2}
+  unPlaceAudio: {fileID: 11400000, guid: 63da4644f077ece4792a1071554af0ec, type: 2}
   canFire: 0
   fireRate: 2
   bulletPrefab: {fileID: 9055340031763392036, guid: 37a6fc439ebbae54896d591c7bc6dee4, type: 3}
   bulletSpawnPoint: {fileID: 6348961182764902271}
+  fireAudio: {fileID: 11400000, guid: 5488e89401600464a95a23ced072de7c, type: 2}
 --- !u!65 &1055400688886756390
 BoxCollider:
   m_ObjectHideFlags: 0

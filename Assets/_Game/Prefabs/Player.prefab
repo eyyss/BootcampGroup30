@@ -894,7 +894,7 @@ MonoBehaviour:
   moneyLayer:
     serializedVersion: 2
     m_Bits: 4
-  collectSound: {fileID: 0}
+  collectAudio: {fileID: 11400000, guid: 05fc8aec719ebf74d86ad10f2c466066, type: 2}
   collectEffectPrefab: {fileID: 0}
 --- !u!1001 &3264759510941639488
 PrefabInstance:

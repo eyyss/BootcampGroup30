@@ -103,6 +103,8 @@ MonoBehaviour:
   maxHealth: 100
   healthSlider: {fileID: 1432904356458349116}
   placeZone: {fileID: 0}
+  placeAudio: {fileID: 11400000, guid: 142d8e57b97b32e498ca869892b3d636, type: 2}
+  unPlaceAudio: {fileID: 11400000, guid: 63da4644f077ece4792a1071554af0ec, type: 2}
   moneyPrefab: {fileID: 9165286070389718820, guid: c1c7ff45cf00b2845a8546712a79de05, type: 3}
   spawnTime: 10
 --- !u!1001 &7683336569703479913

@@ -103,6 +103,8 @@ MonoBehaviour:
   maxHealth: 200
   healthSlider: {fileID: 8734750694095113986}
   placeZone: {fileID: 0}
+  placeAudio: {fileID: 11400000, guid: 142d8e57b97b32e498ca869892b3d636, type: 2}
+  unPlaceAudio: {fileID: 11400000, guid: 63da4644f077ece4792a1071554af0ec, type: 2}
 --- !u!1001 &34360250376927063
 PrefabInstance:
   m_ObjectHideFlags: 0

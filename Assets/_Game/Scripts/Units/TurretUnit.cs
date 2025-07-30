@@ -9,6 +9,7 @@ public class Turret : Unit
     private float fireTimer;
     public GameObject bulletPrefab;
     public GameObject bulletSpawnPoint;
+    public AudioData fireAudio;
 
     public override void Awake()
     {
@@ -27,6 +28,8 @@ public class Turret : Unit
     }
     private void Fire()
     {
+        fireAudio.Play2D(this);
+
         Instantiate(bulletPrefab, bulletSpawnPoint.transform.position, Quaternion.identity);
 
         transform.DOKill();

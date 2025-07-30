@@ -8,8 +8,8 @@ public class PlayerEconomy : MonoBehaviour
     public TextMeshProUGUI moneyText;
     public float moneyPickupRange = 2f;
     public LayerMask moneyLayer;
-    [SerializeField] private AudioClip collectSound;
-    [SerializeField] private GameObject collectEffectPrefab;
+    public AudioData collectAudio;
+    public GameObject collectEffectPrefab;
     void Awake()
     {
         Singelton = this;
@@ -36,8 +36,7 @@ public class PlayerEconomy : MonoBehaviour
                     money += moneyComp.value;
                     moneyText.text = "Para: " + money.ToString();
 
-                    if (collectSound != null)
-                        AudioSource.PlayClipAtPoint(collectSound, transform.position);
+                    collectAudio.Play2D(this);
 
                     if (collectEffectPrefab != null)
                         Instantiate(collectEffectPrefab, transform.position + Vector3.up * 1f, Quaternion.identity);
