@@ -6,10 +6,11 @@ using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
+
     public static Shop Singelton;
     public CinemachineCamera gameplayCamera, shopCamera;
     public GameObject shopCanvas;
-    public List<UnitCardData> cardDatas;
+    public List<ChapterCardData> chapterCardData;
     public UnitCard cardPrefab;
     public Transform unitPanel;
     private float shopTimer;
@@ -30,6 +31,7 @@ public class Shop : MonoBehaviour
             shopButton.interactable = true;
         });
 
+        List<UnitCardData> cardDatas = chapterCardData[ChapterController.Singelton.currentChapterIndex].unitCardDatas;
         foreach (var item in cardDatas)
         {
             UnitCard unitCard = Instantiate(cardPrefab, unitPanel);
@@ -83,5 +85,10 @@ public class Shop : MonoBehaviour
         {
             ExitShop();
         }
+    }
+    [System.Serializable]
+    public class ChapterCardData
+    {
+        public List<UnitCardData> unitCardDatas;
     }
 }

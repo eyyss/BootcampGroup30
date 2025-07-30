@@ -280,6 +280,18 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1866718989198900379, guid: 6a57a631037cfcc4ebaaa5147a3dac42, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866718989198900379, guid: 6a57a631037cfcc4ebaaa5147a3dac42, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866718989198900379, guid: 6a57a631037cfcc4ebaaa5147a3dac42, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 4081197871200445175, guid: 6a57a631037cfcc4ebaaa5147a3dac42, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

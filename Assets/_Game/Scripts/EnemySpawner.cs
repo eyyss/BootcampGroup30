@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class EnemySpawner : MonoBehaviour
 {
     public static EnemySpawner Singelton;
-    public LevelData levelData;
+    public List<LevelData> levelDatas;
     public Transform spawnPoint;
 
     private int currentWave = 0;
@@ -36,6 +36,7 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator SpawnWaves()
     {
+        LevelData levelData = levelDatas[ChapterController.Singelton.currentChapterIndex];
         while (currentWave < levelData.waves.Count)
         {
             if (currentWave == levelData.waves.Count - 1)
