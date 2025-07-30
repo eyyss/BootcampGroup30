@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18d64c011d5b5fb4c97c3a9a4e7e30eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 20
   healthSlider: {fileID: 1432904356458349116}
   placeZone: {fileID: 0}
   placeAudio: {fileID: 11400000, guid: 142d8e57b97b32e498ca869892b3d636, type: 2}

@@ -5045,7 +5045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemySpawner: {fileID: 13953913}
-  currentChapterIndex: 2
+  currentChapterIndex: 0
   dialogues:
   - {fileID: 1470713297}
   - {fileID: 993488011}
@@ -5757,7 +5757,7 @@ MonoBehaviour:
   music1: {fileID: 8300000, guid: 47028eaa802fb304fa94d0e25c0633ef, type: 3}
   music2: {fileID: 8300000, guid: f483624b07b0fe54a8594b1cdee14b03, type: 3}
   music3: {fileID: 8300000, guid: 434b7bc2c2a05ca4cb5c0c2ad434f1f1, type: 3}
-  musicVolume: 0.2
+  musicVolume: 0.05
 --- !u!1001 &1327732551
 PrefabInstance:
   m_ObjectHideFlags: 0
