@@ -261,7 +261,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c12d5f9218192d4898fe4074cecbf5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelData: {fileID: 11400000, guid: a1eb3e7b28a3500428bd760cfa212a6e, type: 2}
+  levelDatas:
+  - {fileID: 11400000, guid: a1eb3e7b28a3500428bd760cfa212a6e, type: 2}
+  - {fileID: 11400000, guid: ea62d16f089505c4f8b47fcb50c8a39c, type: 2}
+  - {fileID: 11400000, guid: ca1793d0f120f7443b4e4f26cd2f20cd, type: 2}
   spawnPoint: {fileID: 13953912}
   preparationDuration: 3
 --- !u!1001 &17293409
@@ -894,11 +897,19 @@ MonoBehaviour:
   gameplayCamera: {fileID: 337219045}
   shopCamera: {fileID: 988567315}
   shopCanvas: {fileID: 450129051}
-  cardDatas:
-  - {fileID: 11400000, guid: 7a438f01ae5b5ac4c9a9dfc67d54aa81, type: 2}
-  - {fileID: 11400000, guid: cd10702de2582a54d8f587ce08e9330f, type: 2}
-  - {fileID: 11400000, guid: f930c112bb84c1444960ea3d8b6c81ac, type: 2}
-  - {fileID: 11400000, guid: c58b13ab105e13540aaf9091beda2e47, type: 2}
+  chapterCardData:
+  - unitCardDatas:
+    - {fileID: 11400000, guid: cd10702de2582a54d8f587ce08e9330f, type: 2}
+    - {fileID: 11400000, guid: 7a438f01ae5b5ac4c9a9dfc67d54aa81, type: 2}
+  - unitCardDatas:
+    - {fileID: 11400000, guid: cd10702de2582a54d8f587ce08e9330f, type: 2}
+    - {fileID: 11400000, guid: 7a438f01ae5b5ac4c9a9dfc67d54aa81, type: 2}
+    - {fileID: 11400000, guid: f930c112bb84c1444960ea3d8b6c81ac, type: 2}
+  - unitCardDatas:
+    - {fileID: 11400000, guid: cd10702de2582a54d8f587ce08e9330f, type: 2}
+    - {fileID: 11400000, guid: 7a438f01ae5b5ac4c9a9dfc67d54aa81, type: 2}
+    - {fileID: 11400000, guid: f930c112bb84c1444960ea3d8b6c81ac, type: 2}
+    - {fileID: 11400000, guid: c58b13ab105e13540aaf9091beda2e47, type: 2}
   cardPrefab: {fileID: 3159945099340718001, guid: 121ffa22ab03fa941b27672eba0014ad, type: 3}
   unitPanel: {fileID: 450129052}
   shopButton: {fileID: 412202911}
