@@ -983,21 +983,68 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.size
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.data[0].sentence
-      value: "Buras\u0131da neresi, nerden geldim buraya !!!!"
+      value: "Neredeyim ben? Buras\u0131da neresi !!!"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.data[1].sentence
-      value: "Sakin ol bilge insan sen bu d\xFCnyadaki tek umudums\u0131un, ben ki
-        evrenler gezgini seni se\xE7tim !!!!"
+      value: "Ben bu d\xFCnyan\u0131n orman koruyucusu! \xE7abuk kendine gel !"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.data[2].sentence
-      value: "Heyyy yabanc\u0131 l\xFCtfen dur dinleme onuuu !!!"
+      value: "En son Bah\xE7emde \xE7i\xE7eklerimle u\u011Fra\u015F\u0131yordum.
+        Bir \u0131\u015F\u0131\u011F\u0131n geldi\u011Fini g\xF6rd\xFCm."
       objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[3].sentence
+      value: "Evet o benim \u0131\u015F\u0131nlama \u0131\u015F\u0131\u011F\u0131m.
+        Neyse bunu a\xE7\u0131klamaya zaman yok. Kar\u015F\u0131dan gelen ayak seslerini
+        duyuyor musun ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[4].sentence
+      value: "\u011Eaaaa. L\xFCtfen dur o ulu yaz\u0131t bizim kadim yadigar\u0131m\u0131z."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[5].sentence
+      value: "Siz mi? siz de kimsiniz ve kayadan bir adam nas\u0131l da oluyor !!!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[6].sentence
+      value: "Bunun i\xE7in zaman yok ayak seslerini duymuyor musun! Al \u015Fu olu\u015Fturduklar\u0131m\u0131
+        yerle\u015Ftir ve \xF6zlerini bana getir."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[0].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 388d79e4eed2a034da44c3c5bed4c99e, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[1].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 353f6729dc666e346a45dab82514e507, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[2].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7f860513156cc81489e67bf08241de53, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[3].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 22d4e90e81e0a8046882552c8703a165, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[4].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: c29b3c659ffa09e448cd4e49034ce65d, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[5].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: c599642d8eb061d41905bf1eed9c4372, type: 3}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[6].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4738127e09b7d3d44a087672cca4c0eb, type: 3}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.data[0].dialogueCharacter
       value: 
@@ -1009,7 +1056,23 @@ PrefabInstance:
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: sentences.Array.data[2].dialogueCharacter
       value: 
+      objectReference: {fileID: 11400000, guid: 4752645aa0d4f144783c729ff9e40e5a, type: 2}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[3].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ac10c7068b042143b28227ea5d758cb, type: 2}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[4].dialogueCharacter
+      value: 
       objectReference: {fileID: 11400000, guid: 66a942ebaf304c94f8c2434a8d84f703, type: 2}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[5].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 4752645aa0d4f144783c729ff9e40e5a, type: 2}
+    - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
+      propertyPath: sentences.Array.data[6].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ac10c7068b042143b28227ea5d758cb, type: 2}
     - target: {fileID: 8557568673631317014, guid: cc0b3ff4467379548b7df5f7e83dd6a2, type: 3}
       propertyPath: endDialogueEvent.m_PersistentCalls.m_Calls.Array.size
       value: 1
