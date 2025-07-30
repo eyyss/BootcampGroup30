@@ -48,8 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32b62be8cfee80d4a8294fa20012854a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
-  maxHealth: 100
+  moveSpeed: 2
+  maxHealth: 200
   healthSlider: {fileID: 2028585653341778082}
   obstacleLayer:
     serializedVersion: 2

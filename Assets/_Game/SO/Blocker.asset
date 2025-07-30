@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: Blocker
   description: "Oyalama i\xE7in uygundur."
-  price: 100
+  price: 75
   icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   prefab: {fileID: 598431792152023420, guid: 196d67d95dfe1d644bbc08b2622588e4, type: 3}

@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32b62be8cfee80d4a8294fa20012854a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 1.5
   maxHealth: 100
   healthSlider: {fileID: 2028585653341778082}
   obstacleLayer:
@@ -57,7 +57,7 @@ MonoBehaviour:
   obstacleCheckDistance: 1
   frontGO: {fileID: 0}
   damage: 5
-  attackRate: 1
+  attackRate: 0.7
   animator: {fileID: 2892969038376418352}
 --- !u!136 &8916508760485957142
 CapsuleCollider:

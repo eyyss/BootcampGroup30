@@ -888,7 +888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76f8226ea5457f14f9cebf13cef1aaf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 1000
+  money: 250
   moneyText: {fileID: 2246596692443900935}
   moneyPickupRange: 2
   moneyLayer:

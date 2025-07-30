@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Economy
   m_EditorClassIdentifier: 
   unitName: Ekonomi
-  description: "5 saniyede 1 ekonomi \xFCretir."
-  price: 20
+  description: "10 saniyede 20 ekonomi \xFCretir."
+  price: 0
   icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   prefab: {fileID: 4162420327811511009, guid: 685cb8d165fce634380d394c0476e0be, type: 3}

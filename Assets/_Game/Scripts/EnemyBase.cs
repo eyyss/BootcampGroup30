@@ -35,7 +35,10 @@ public class EnemyBase : MonoBehaviour, IDamageable
             healthSlider.gameObject.SetActive(false);
             coll.enabled = false;
             animator.CrossFade("Die", 0.2f);
-            //Destroy(gameObject);
+            transform.DOMove(transform.position + Vector3.down * 2, 1f).SetDelay(1).OnComplete(delegate
+            {
+                Destroy(gameObject);
+            });
         }
     }
 
