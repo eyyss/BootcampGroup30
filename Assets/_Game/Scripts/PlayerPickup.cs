@@ -45,7 +45,7 @@ public class PlayerPickup : MonoBehaviour
                 placeableObj.GetComponent<IPlaceable>().OnPlace(currentPlaceZone);
                 currentPlaceZone = null;
                 placeableObj = null;
-                selectedZoneDebugTransform.position = Vector3.zero + Vector3.down * 3;
+                selectedZoneDebugTransform.position = Vector3.zero + Vector3.down * 10;
                 return;
             }
         }

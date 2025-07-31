@@ -15,5 +15,5 @@ MonoBehaviour:
   unitName: Bomba
   description: "Alan hasar\u0131"
   price: 75
-  icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: 4c151cc2f6b2c1b4396d6e746f195cd1, type: 3}
   prefab: {fileID: 704546843195274819, guid: 1cb50aacd5be4c14d855a58f6c662bce, type: 3}

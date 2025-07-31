@@ -16,7 +16,16 @@ MonoBehaviour:
   - enemies:
     - enemyPrefab: {fileID: 8257210677776018611, guid: a6b45353ba0d3e847b914c1a9a085309, type: 3}
       spawnChance: 1
-      count: 1
+      count: 2
+    - enemyPrefab: {fileID: 8257210677776018611, guid: 38e231a5459d0e547b1c959e20d10bd6, type: 3}
+      spawnChance: 1
+      count: 2
+    - enemyPrefab: {fileID: 8257210677776018611, guid: c46b9c24ef763234db464b13f5eb9a79, type: 3}
+      spawnChance: 1
+      count: 2
+    - enemyPrefab: {fileID: 8257210677776018611, guid: a93c6b31bf526ca428acda1dd36633a8, type: 3}
+      spawnChance: 1
+      count: 2
   - enemies:
     - enemyPrefab: {fileID: 8257210677776018611, guid: 38e231a5459d0e547b1c959e20d10bd6, type: 3}
       spawnChance: 1

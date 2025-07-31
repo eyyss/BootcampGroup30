@@ -76,6 +76,7 @@ MonoBehaviour:
   expolsionEffectPrefab: {fileID: 4593184484909914550, guid: 233882363adf75b458acb62dc54e25e0, type: 3}
   explosionRadius: 4
   explosionDamage: 100
+  explosionAudio: {fileID: 11400000, guid: 99d0335f11e682b42bc3530c60779206, type: 2}
 --- !u!1 &2039253357003309503
 GameObject:
   m_ObjectHideFlags: 0

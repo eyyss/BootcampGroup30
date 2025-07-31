@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 468022873264304072}
-  - component: {fileID: 5957083875328506514}
   - component: {fileID: 1055400688886756390}
+  - component: {fileID: 5957083875328506514}
   m_Layer: 0
   m_Name: TurretUnit
   m_TagString: Untagged
@@ -36,6 +36,27 @@ Transform:
   - {fileID: 4551731868680782489}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1055400688886756390
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238790730349004465}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &5957083875328506514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,27 +79,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 9055340031763392036, guid: 37a6fc439ebbae54896d591c7bc6dee4, type: 3}
   bulletSpawnPoint: {fileID: 6348961182764902271}
   fireAudio: {fileID: 11400000, guid: 5488e89401600464a95a23ced072de7c, type: 2}
---- !u!65 &1055400688886756390
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238790730349004465}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &4101117447688738866
 GameObject:
   m_ObjectHideFlags: 0

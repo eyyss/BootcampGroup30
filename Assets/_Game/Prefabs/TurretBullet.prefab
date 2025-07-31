@@ -230,6 +230,7 @@ MonoBehaviour:
   moveSpeed: 5
   damage: 20
   hitEffect: {fileID: 5880797563141009103, guid: 4f873d4a5fc50fb40927c96585c76879, type: 3}
+  bulletHitAudio: {fileID: 11400000, guid: 1d7689b7146639d458cb8ea9e2a839e9, type: 2}
 --- !u!135 &-5259034662803267506
 SphereCollider:
   m_ObjectHideFlags: 0

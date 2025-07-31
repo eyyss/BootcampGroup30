@@ -1,3 +1,4 @@
+using DG.Tweening;
 using HeneGames.DialogueSystem;
 using UnityEngine;
 
@@ -14,8 +15,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity;
     private bool isGrounded;
     public bool CanMove = true;
-    public GameObject visual;
     public Animator animator;
+    public Renderer visual;
+    public AudioData dissolveAudio;
     public GameObject torch;
     void Awake()
     {
@@ -41,6 +43,10 @@ public class PlayerMovement : MonoBehaviour
             torch.SetActive(true);
             animator.SetBool("IsTorch", true);
         }
+
+        dissolveAudio.Play2D(this);
+        visual.material.SetVector("_DissolveOffest", new Vector3(0, 2, 0));
+        visual.material.DOVector(new Vector3(0, -2, 0), "_DissolveOffest", 2);
     }
 
     public void SetMove(bool state)

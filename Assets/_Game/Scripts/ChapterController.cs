@@ -34,6 +34,7 @@ public class ChapterController : MonoBehaviour
     }
     private IEnumerator Start()
     {
+        PlayerMovement.Singelton.SetMove(false);
         yield return new WaitForSeconds(2f);
         DialogueUI.instance.StartDialogue(dialogues[currentChapterIndex]);
     }

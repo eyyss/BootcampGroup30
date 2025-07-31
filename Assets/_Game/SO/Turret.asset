@@ -15,5 +15,5 @@ MonoBehaviour:
   unitName: Taret
   description: "1 saniyede 1 kez ate\u015F eder"
   price: 100
-  icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: a15b417476e38994aa5380eea5c4323b, type: 3}
   prefab: {fileID: 238790730349004465, guid: aa2ec4ef6039ea74c957d34c0263b75b, type: 3}

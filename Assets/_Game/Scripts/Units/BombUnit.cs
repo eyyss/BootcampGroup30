@@ -6,6 +6,7 @@ public class BombUnit : Unit
     public ParticleSystem expolsionEffectPrefab;
     public float explosionRadius = 4;
     public float explosionDamage = 100;
+    public AudioData explosionAudio;
     public override void OnTake()
     {
         base.OnTake();
@@ -19,6 +20,7 @@ public class BombUnit : Unit
         {
             var expolsionEffect = Instantiate(expolsionEffectPrefab, transform.position, Quaternion.identity);
             expolsionEffect.Play();
+            explosionAudio.Play2D(this);
             Destroy(gameObject);
             var hits = Physics.OverlapSphere(transform.position, explosionRadius);
             foreach (var item in hits)
