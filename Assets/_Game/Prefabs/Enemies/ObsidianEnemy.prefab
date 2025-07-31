@@ -59,6 +59,7 @@ MonoBehaviour:
   damage: 5
   attackRate: 1
   animator: {fileID: 1461082212854512888}
+  visual: {fileID: 1775526830025889506}
 --- !u!136 &8916508760485957142
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -232,6 +233,11 @@ PrefabInstance:
 --- !u!95 &1461082212854512888 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 837d75b44fa11be41ae07ec4db782915, type: 3}
+  m_PrefabInstance: {fileID: 4984459089029693801}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1775526830025889506 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -2481576718418356341, guid: 837d75b44fa11be41ae07ec4db782915, type: 3}
   m_PrefabInstance: {fileID: 4984459089029693801}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &4802774939711596162 stripped

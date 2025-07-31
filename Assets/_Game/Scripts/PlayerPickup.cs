@@ -9,7 +9,6 @@ public class PlayerPickup : MonoBehaviour
     public Transform placeCheckPoint;
     public Transform selectedZoneDebugTransform;
     private PlaceZone currentPlaceZone;
-    public Animator anim;
     void Awake()
     {
         Singelton = this;
@@ -47,7 +46,6 @@ public class PlayerPickup : MonoBehaviour
                 currentPlaceZone = null;
                 placeableObj = null;
                 selectedZoneDebugTransform.position = Vector3.zero + Vector3.down * 3;
-                anim.SetBool("Carrying", false);
                 return;
             }
         }
@@ -93,13 +91,11 @@ public class PlayerPickup : MonoBehaviour
                 takeObj.transform.SetParent(holdPoint.transform);
                 placeableObj = takeObj;
                 placeable.OnTake();
-                anim.SetBool("Carrying", true);
             }
         }
     }
     public void Drop()
     {
-        anim.SetBool("Carrying", false);
         Destroy(placeableObj);
         currentPlaceZone = null;
         placeableObj = null;

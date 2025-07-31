@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public bool CanMove = true;
     public GameObject visual;
     public Animator animator;
+    public GameObject torch;
     void Awake()
     {
         Singelton = this;
@@ -34,6 +35,12 @@ public class PlayerMovement : MonoBehaviour
         {
             SetMove(true);
         });
+
+        if (ChapterController.Singelton.currentChapterIndex == 2)// son chapter
+        {
+            torch.SetActive(true);
+            animator.SetBool("IsTorch", true);
+        }
     }
 
     public void SetMove(bool state)

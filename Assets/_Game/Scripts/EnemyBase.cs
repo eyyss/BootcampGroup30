@@ -18,6 +18,7 @@ public class EnemyBase : MonoBehaviour, IDamageable
     private float attackTimer;
     public Animator animator;
     private Collider coll;
+    public Renderer visual;
 
     public bool IsDead()
     {
@@ -49,6 +50,13 @@ public class EnemyBase : MonoBehaviour, IDamageable
         healthSlider.maxValue = maxHealth;
         healthSlider.value = health;
         attackTimer = attackRate;
+    }
+    void Start()
+    {
+        if (ChapterController.Singelton.currentChapterIndex == 2)
+        {
+            visual.material.EnableKeyword("_EMISSION");
+        }
     }
     void Update()
     {

@@ -11,6 +11,7 @@ public class ChapterController : MonoBehaviour
     public List<DialogueManager> dialogues;
     public float startWaveWaitDuration = 10;
     public List<Light> suns;
+    public Transform forestSage, stoneGuardian;
     void Awake()
     {
         Singelton = this;
@@ -22,6 +23,14 @@ public class ChapterController : MonoBehaviour
             item.gameObject.SetActive(false);
         }
         suns[currentChapterIndex].gameObject.SetActive(true);
+
+        if (currentChapterIndex == 2) // son chapter
+        {
+            Vector3 forestSageStartPos = forestSage.position;
+            Vector3 stoneGuardianStartPos = stoneGuardian.position;
+            forestSage.position = stoneGuardianStartPos;
+            stoneGuardian.position = forestSageStartPos;
+        }
     }
     private IEnumerator Start()
     {

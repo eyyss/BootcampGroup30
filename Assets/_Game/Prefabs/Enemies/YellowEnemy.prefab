@@ -59,6 +59,7 @@ MonoBehaviour:
   damage: 5
   attackRate: 0.7
   animator: {fileID: 2892969038376418352}
+  visual: {fileID: 2371436430997165469}
 --- !u!136 &8916508760485957142
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -256,6 +257,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!137 &2371436430997165469 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2664098864995057252, guid: 7f7fd37a7ff0ff24da9717dec22d192a, type: 3}
+  m_PrefabInstance: {fileID: 293243135084768249}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7306238180126951671
 PrefabInstance:
   m_ObjectHideFlags: 0
