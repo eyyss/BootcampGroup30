@@ -7,6 +7,6 @@ public class PlayerFootsteps : MonoBehaviour
     public void PlayFootstepSound()
     {
         int r = Random.Range(0, audioClips.Count);
-        audioClips[r].PlayClip2D(this, null, 0.2f);
+        audioClips[r].PlayClip2D(this, null, 0.4f);
     }
 }

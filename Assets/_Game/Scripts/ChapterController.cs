@@ -10,10 +10,18 @@ public class ChapterController : MonoBehaviour
     public int currentChapterIndex = 0;
     public List<DialogueManager> dialogues;
     public float startWaveWaitDuration = 10;
+    public List<Light> suns;
     void Awake()
     {
         Singelton = this;
+
         currentChapterIndex = PlayerPrefs.GetInt(SaveKeys.CURRENT_CHAPTER_INDEX, currentChapterIndex);
+
+        foreach (var item in suns)
+        {
+            item.gameObject.SetActive(false);
+        }
+        suns[currentChapterIndex].gameObject.SetActive(true);
     }
     private IEnumerator Start()
     {

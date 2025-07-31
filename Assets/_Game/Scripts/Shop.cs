@@ -32,10 +32,10 @@ public class Shop : MonoBehaviour
         });
 
         List<UnitCardData> cardDatas = chapterCardData[ChapterController.Singelton.currentChapterIndex].unitCardDatas;
-        foreach (var item in cardDatas)
+        for (int i = 0; i < cardDatas.Count; i++)
         {
             UnitCard unitCard = Instantiate(cardPrefab, unitPanel);
-            unitCard.Initialize(item);
+            unitCard.Initialize(cardDatas[i], i + 1);
         }
 
     }
@@ -69,7 +69,7 @@ public class Shop : MonoBehaviour
     {
         if (!shopButton.interactable) return;
 
-        if (Input.GetKeyDown(KeyCode.B) && !shopCanvas.activeSelf)
+        if (Input.GetKeyDown(KeyCode.Q) && !shopCanvas.activeSelf)
         {
             EnterShop();
         }
@@ -81,11 +81,43 @@ public class Shop : MonoBehaviour
 
         if (shopCanvas.activeSelf)
             shopTimer += Time.deltaTime;
-        if (Input.GetKeyDown(KeyCode.B) && shopTimer > 0.1f)
+        if (Input.GetKeyDown(KeyCode.Q) && shopTimer > 0.1f)
         {
             ExitShop();
         }
+
+        List<UnitCardData> cardDatas = chapterCardData[ChapterController.Singelton.currentChapterIndex].unitCardDatas;
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Buy(cardDatas[0]);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Buy(cardDatas[1]);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3) && cardDatas.Count > 2)
+        {
+            Buy(cardDatas[2]);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4) && cardDatas.Count > 3)
+        {
+            Buy(cardDatas[3]);
+        }
+
     }
+    public void Buy(UnitCardData data)
+    {
+        if (!PlayerEconomy.Singelton.TryBuy(data)) return;
+
+        if (PlayerPickup.Singelton.placeableObj == null)
+        {
+            var spawnedObj = Instantiate(data.prefab);
+            PlayerPickup.Singelton.Take(spawnedObj);
+            ExitShop();
+        }
+    }
+
     [System.Serializable]
     public class ChapterCardData
     {
