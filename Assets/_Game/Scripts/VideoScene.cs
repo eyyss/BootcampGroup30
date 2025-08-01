@@ -17,6 +17,10 @@ public class VideoScene : MonoBehaviour
             if (holdEnterToSkipImage.fillAmount > 0.9f && !skipped)
             {
                 skipped = true;
+                if (targetSceneName == "Exit")
+                {
+                    PlayerPrefs.DeleteAll();
+                }
                 TransitionManager.Instance().Transition(targetSceneName, ts, 1);
             }
         }
