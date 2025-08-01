@@ -88,6 +88,8 @@ public class Shop : MonoBehaviour
 
         List<UnitCardData> cardDatas = chapterCardData[ChapterController.Singelton.currentChapterIndex].unitCardDatas;
 
+        if (!shopCanvas.activeSelf) return;
+
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Buy(cardDatas[0]);

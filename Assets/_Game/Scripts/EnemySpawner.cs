@@ -63,12 +63,9 @@ public class EnemySpawner : MonoBehaviour
         {
             for (int i = 0; i < enemyInfo.count; i++)
             {
-                if (Random.value <= enemyInfo.spawnChance)
-                {
-                    GameObject enemy = Instantiate(enemyInfo.enemyPrefab, GetRandomSpawnPos(), enemyInfo.enemyPrefab.transform.rotation);
-                    aliveEnemies.Add(enemy);
-                    yield return new WaitForSeconds(0.2f);
-                }
+                GameObject enemy = Instantiate(enemyInfo.enemyPrefab, GetRandomSpawnPos(), enemyInfo.enemyPrefab.transform.rotation);
+                aliveEnemies.Add(enemy);
+                yield return new WaitForSeconds(0.2f);
             }
         }
     }

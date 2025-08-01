@@ -140,7 +140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Continue "Space"
+  m_text: Devam et "Space"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 105d4dc44c75cfe4895237b06d7f407e, type: 2}
   m_sharedMaterial: {fileID: -1113145376279818746, guid: 105d4dc44c75cfe4895237b06d7f407e, type: 2}

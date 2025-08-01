@@ -18,6 +18,5 @@ public class Wave
 public class EnemySpawnInfo
 {
     public GameObject enemyPrefab;
-    [Range(0, 1)] public float spawnChance; // 0.1 = %10
     public int count;
 }

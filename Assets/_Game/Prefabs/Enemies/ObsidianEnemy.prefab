@@ -60,6 +60,8 @@ MonoBehaviour:
   attackRate: 1
   animator: {fileID: 1461082212854512888}
   visual: {fileID: 1775526830025889506}
+  grumbleAudio: {fileID: 11400000, guid: 4d88b11944a62c041b8d7f1f604f4bd9, type: 2}
+  punchAudio: {fileID: 11400000, guid: e90742aa15c7cf74aba89a6bbdad555a, type: 2}
 --- !u!136 &8916508760485957142
 CapsuleCollider:
   m_ObjectHideFlags: 0

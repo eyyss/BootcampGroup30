@@ -99,7 +99,7 @@ public class PlayerPickup : MonoBehaviour
         Destroy(placeableObj);
         currentPlaceZone = null;
         placeableObj = null;
-        selectedZoneDebugTransform.position = Vector3.zero + Vector3.down * 3;
+        selectedZoneDebugTransform.position = Vector3.zero + Vector3.down * 10;
     }
 
     void OnDrawGizmos()

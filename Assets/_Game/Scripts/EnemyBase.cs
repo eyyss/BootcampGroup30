@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
@@ -19,6 +20,7 @@ public class EnemyBase : MonoBehaviour, IDamageable
     public Animator animator;
     private Collider coll;
     public Renderer visual;
+    public AudioData grumbleAudio, punchAudio;
 
     public bool IsDead()
     {
@@ -57,6 +59,7 @@ public class EnemyBase : MonoBehaviour, IDamageable
         {
             visual.material.EnableKeyword("_EMISSION");
         }
+        StartCoroutine(RandomGrumble());
     }
     void Update()
     {
@@ -92,8 +95,15 @@ public class EnemyBase : MonoBehaviour, IDamageable
         animator.SetTrigger("Attack");
         if (frontGO.TryGetComponent(out IPlayerDamageable damageable))
         {
+            punchAudio.Play2D(this);
             damageable.TakeDamage(damage);
         }
+    }
+    private IEnumerator RandomGrumble()
+    {
+        yield return new WaitForSeconds(Random.Range(5, 100));
+        grumbleAudio.Play2D(this);
+        StartCoroutine(RandomGrumble());
     }
     void OnDrawGizmos()
     {

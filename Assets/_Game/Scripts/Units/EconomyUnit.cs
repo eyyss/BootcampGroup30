@@ -33,6 +33,7 @@ public class EconomyUnit : Unit
                 Instantiate(moneyPrefab, pos, Quaternion.identity);
 
                 Sequence seq = DOTween.Sequence();
+                seq.SetLink(gameObject);
                 seq.Append(transform.DOMoveY(transform.position.y + 0.3f, 0.2f).SetEase(Ease.OutQuad));
                 seq.Join(transform.DOScale(Vector3.one * 1.1f, 0.2f).SetEase(Ease.OutQuad));
                 seq.Append(transform.DOMoveY(transform.position.y, 0.2f).SetEase(Ease.InQuad));

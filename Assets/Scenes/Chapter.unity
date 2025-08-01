@@ -7680,7 +7680,7 @@ MonoBehaviour:
   - {fileID: 1470713297}
   - {fileID: 993488011}
   - {fileID: 2081493376}
-  startWaveWaitDuration: 10
+  startWaveWaitDuration: 15
   suns:
   - {fileID: 212014309}
   - {fileID: 674039130}
@@ -10837,6 +10837,9 @@ MonoBehaviour:
   retryTS: {fileID: 11400000, guid: 057babd6f13132c449650d99e3c4e99c, type: 2}
   preparationPanel: {fileID: 1327737773}
   finalWavePanel: {fileID: 1931438483}
+  newWaveAudio: {fileID: 11400000, guid: 4bac32ca5ffab7d41b084c9878b8b782, type: 2}
+  victoryAudio: {fileID: 11400000, guid: 189d6253c1ea9714f989b49bda0988bd, type: 2}
+  defeatAudio: {fileID: 11400000, guid: f56f9c2d30612db44aa276e95708ec23, type: 2}
 --- !u!1001 &1712263934
 PrefabInstance:
   m_ObjectHideFlags: 0

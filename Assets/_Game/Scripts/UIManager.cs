@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
     public TransitionSettings retryTS;
     public GameObject preparationPanel;
     public GameObject finalWavePanel;
+    public AudioData newWaveAudio, victoryAudio, defeatAudio;
 
     void Awake()
     {
@@ -29,13 +30,23 @@ public class UIManager : MonoBehaviour
         });
         nextButton.onClick.AddListener(delegate
         {
-            nextButton.interactable = false;
-            ChapterController.Singelton.NextChapter();
-            TransitionManager.Instance().Transition(SceneManager.GetActiveScene().buildIndex, retryTS, 0);
+            if (ChapterController.Singelton.currentChapterIndex == 2) // son chaptersa
+            {
+                nextButton.interactable = false;
+                TransitionManager.Instance().Transition("Exit", retryTS, 0);
+            }
+            else
+            {
+                nextButton.interactable = false;
+                ChapterController.Singelton.NextChapter();
+                TransitionManager.Instance().Transition(SceneManager.GetActiveScene().buildIndex, retryTS, 0);
+            }
+
         });
     }
     public void OpenPreparationPanel()
     {
+        newWaveAudio.Play2D(this);
         preparationPanel.SetActive(true);
     }
     public void ClosePreparationPanel()
@@ -57,12 +68,14 @@ public class UIManager : MonoBehaviour
 
     public void OpenDefeatPanel()
     {
+        defeatAudio.Play2D(this);
         Time.timeScale = 0;
         defeatPanel.SetActive(true);
     }
 
     public void OpenVictoryPanel()
     {
+        victoryAudio.Play2D(this);
         victoryPanel.SetActive(true);
     }
 }
