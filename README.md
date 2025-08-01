@@ -17,7 +17,7 @@ Karar verilmedi.
 
 ## Oyun İsmi
 
-**Karar verilmedi.**
+**Letterland**
 
 ## Oyun Logosu
 
@@ -25,7 +25,7 @@ Tasarlanmadı.
 
 ## Oyun Açıklaması
 
-- Tamamlanacak
+- **Letterland**, hikaye odaklı bir kule savunma oyunudur; ama ilk bakışta görünen hiçbir şey göründüğü gibi değildir. Oyuncular, kelimelerin ve anlamın yok olduğu bir dünyada, hayatta kalan son bilinçlerden biri olarak kadim bir varlığın rehberliğinde bir kuleyi savunmaya başlar. Ancak ilerledikçe, savundukları şeyin gerçek yüzüyle karşılaşırlar. Strateji ve anlatıyı ustaca harmanlayan _Letterland_, oyuncuyu hem zihinsel hem de ahlaki kararlarla yüzleştirir. Ters köşelerle dolu kurgusu, mitolojik göndermeleri ve kelime temelli temasıyla, türünün ötesine geçen sürükleyici bir deneyim sunar.
 
 ## Oyun Hikayesi
 
@@ -40,11 +40,22 @@ Tasarlanmadı.
 
 ## Hedef Kitle
 
-Karar verilmedi.
+- Strateji ve Hikaye Meraklıları (18–35 yaş)
+- Mobil ve Gündelik Oyuncular (16–45+ yaş)
+- Edebiyat ve Mitoloji Meraklıları (Her yaş)
 
 ## Pazarlama Planı
 
-Karar verilmedi.
+- **Steam İstek Listesi Kampanyası**  
+Oyunun ilk çıkış gücü, Steam'de toplanacak istek listesiyle belirlenecek. Çarpıcı görseller, gizemli açıklamalar ve etkileyici oynanış GIF’leriyle dikkat çekici bir sayfa hazırlanacak.
+-**Sosyal Medyada Gizem ve Hikaye Merkezli Tanıtım**  
+“Kime güveniyorsun?”, “Her şey yalan olabilir...” gibi hikayeye dayalı kısa video içerikleri X (Twitter), TikTok ve Instagram’da düzenli olarak paylaşılacak. Oyunun anlatı gücü ön planda tutulacak.
+- **Yerel Yayıncı ve Topluluk İşbirlikleri**  
+Türkiye’deki bağımsız oyun yayıncılarına özel demo erişimi verilecek. YouTube ve Twitch üzerinden canlı yayınlar ve oynanış videoları ile ilk tanıtım dalgası oluşturulacak.
+- **Lansman Stratejisi: İndirim + Etkinlik**  
+İlk hafta %15 indirim uygulanacak. Steam yorumları, Discord yarışmaları ve topluluk içi mini etkinliklerle oyuncular teşvik edilecek. Erken geri bildirimler aktif şekilde toplanacak.
+- **Merchandise ve Marka Genişlemesi**  
+Oyunun dünyasından ilham alan tişört, kupa ve poster gibi ürünlerle marka sadakati oluşturulacak. Sadık oyunculara özel kampanyalarla bu ürünler dijital ve fiziksel olarak sunulacak.
 
 ## Product Backlog URL
 
