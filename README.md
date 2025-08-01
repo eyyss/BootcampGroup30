@@ -110,4 +110,46 @@ Karar verilmedi.
   - Sprint Review katılımcıları: Okan Göztak, Servet Ece Gündüz, Zehra Kuzu, Berat Öztürkoğlu.
 
 - **Sprint Retrospective:** 
-  - Detaylı ve zorlayıcı tasarımlar yerine vaktimizi verimli kullanıp oynama isteği yaratacak basit ama güzel tasarımlar yaratmaya karar verdik. 
+  - Detaylı ve zorlayıcı tasarımlar yerine vaktimizi verimli kullanıp oynama isteği yaratacak basit ama güzel tasarımlar yaratmaya karar verdik.
+ 
+    # Sprint 3
+
+- **Sprint Notları**:Tasklar Miro üzerinde gösterilmiştir.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 14 Puan
+
+- **Puan tamamlama mantığı**: Proje boyunca tamamlanması gereken puan sprint boyunca günlük 1 puan olacak şekilde tasarlanmıştır. Her sprint için tamamlanması hedeflenen puan 14'tür.
+
+- **Backlog düzeni ve Story seçimleri**: Sprint planningde yapılması gereken taskları kararlaştırdık. Miro board üzerinde takip ediliyor.
+
+- **Daily Scrum**: Daily Scrum toplantıları Whatsapp üzerinden yapıldı ve haftada bir Teams görüşmeleri ile desteklendi.. Toplantı notları Miro üzerinde bulunmaktadır. [Miro Board](https://miro.com/app/board/uXjVIi03Yns=/)
+
+
+- **Sprint board update**: Sprint board screenshot: 
+
+
+![2025Bootcamp - Frame 6](https://github.com/user-attachments/assets/9d42d9e8-3407-436e-bec3-8b2a387dfd92)
+
+## Ürün Durumu: Ekran Görüntüleri
+
+![WhatsApp Image 2025-08-01 at 23 28 53](https://github.com/user-attachments/assets/35378221-656c-4495-a66d-7ede9ada3892)
+
+![WhatsApp Image 2025-08-01 at 23 28 51](https://github.com/user-attachments/assets/84ae8235-6b9e-4a4d-b511-43f024368724)
+
+![WhatsApp Image 2025-08-01 at 23 28 44](https://github.com/user-attachments/assets/9898debd-e5d0-43d1-a2dd-212799b81e9d)
+
+![WhatsApp Image 2025-08-01 at 23 28 42](https://github.com/user-attachments/assets/0a4e3e46-0eef-4e2b-a9f4-a4d00be7570f)
+
+![WhatsApp Image 2025-08-01 at 23 28 35](https://github.com/user-attachments/assets/b6b9494b-485e-4eac-b30e-16b7c052ee5e)
+![WhatsApp Image 2025-08-01 at 23 28 30](https://github.com/user-attachments/assets/189eb1c1-b5ef-4911-bc87-f4bbff0f3924)
+
+
+- **Sprint Review**: 
+  - Oyun tamamlandı. Bootcamp ürün teslim formu doldurulmasına karar verildi.
+  - Sprint Review katılımcıları: Okan Göztak, Servet Ece Gündüz, Zehra Kuzu, Berat Öztürkoğlu.
+
+- **Sprint Retrospective:** 
+  - Tasarlanan kadın karakter animasyon olarak oyunla uyumlu olmadı ve tek erkek karakter tasarımı ile devam etmeye karar verildi.
+  - Çevre ve karakter assetleri tasarlamak fazla detaylı olup fazla efor gerektirdiği için hazır asset kullanılmasına karar verildi.
+ 
+    
