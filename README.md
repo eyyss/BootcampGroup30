@@ -144,13 +144,20 @@ Oyunun dünyasından ilham alan tişört, kupa ve poster gibi ürünlerle marka 
 
 ## Ürün Durumu: Ekran Görüntüleri
 
+<img width="1594" height="890" alt="image" src="https://github.com/user-attachments/assets/3f63b956-d70e-4db8-a1c2-5e3add45faa1" />
+
+<img width="1592" height="891" alt="image" src="https://github.com/user-attachments/assets/220612a8-1641-42d6-8426-dd9490da5be7" />
+
+<img width="1591" height="898" alt="image" src="https://github.com/user-attachments/assets/f9ee2387-66dc-4bad-9480-aed54c181fa1" />
+
+<img width="1571" height="891" alt="image" src="https://github.com/user-attachments/assets/20b97a12-9c54-4a50-8b04-55ac5c2ad69e" />
+
 ![WhatsApp Image 2025-08-01 at 23 28 53](https://github.com/user-attachments/assets/35378221-656c-4495-a66d-7ede9ada3892)
 
 ![WhatsApp Image 2025-08-01 at 23 28 51](https://github.com/user-attachments/assets/84ae8235-6b9e-4a4d-b511-43f024368724)
 
-![WhatsApp Image 2025-08-01 at 23 28 44](https://github.com/user-attachments/assets/9898debd-e5d0-43d1-a2dd-212799b81e9d)
 
-![WhatsApp Image 2025-08-01 at 23 28 42](https://github.com/user-attachments/assets/0a4e3e46-0eef-4e2b-a9f4-a4d00be7570f)
+
 
 ![WhatsApp Image 2025-08-01 at 23 28 35](https://github.com/user-attachments/assets/b6b9494b-485e-4eac-b30e-16b7c052ee5e)
 ![WhatsApp Image 2025-08-01 at 23 28 30](https://github.com/user-attachments/assets/189eb1c1-b5ef-4911-bc87-f4bbff0f3924)
