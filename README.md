@@ -8,12 +8,13 @@
 
 ## Takım Elemanları
 
+
 |    | <div align="center">Name</div>   | <div align="center">Title</div>  | <div align="center">Socials</div>     |
 | :-----------: | :---------- | :---------- | :----------: |
-|    |  Okan Göztak    | Product Owner     |   | 
-|      | Servet Ece Gündüz     | Scrum Master     |   |
-|    |  Zehra Kuzu     | Developer      |     |
-|      |  Berat Öztürkoğlu    | Developer     |        |
+|  <img width="160" height="160" alt="okan" src="https://github.com/user-attachments/assets/8a540bd1-a0c0-4554-8f83-48cd4f384a7f" /> |  Okan Göztak    | Product Owner     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/okan-göztak-55b65620b/)  | 
+|    <img width="160" height="284" alt="ece" src="https://github.com/user-attachments/assets/bc58f1e1-1c6c-41ca-87bf-84bb47d0ee0b" /> | Servet Ece Gündüz     | Scrum Master     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/ece-gunduz/)  |
+|  <img width="160" height="160" alt="zehra" src="https://github.com/user-attachments/assets/975f273f-6663-4111-a3e5-9bf6d754c262" />  |  Zehra Kuzu     | Developer      | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/zehra-kuzu-741b0a1a3/)    |
+| <img width="160" height="160" alt="berat" src="https://github.com/user-attachments/assets/4fe9bb04-273f-40f7-b8c2-35870016b617" /> |  Berat Öztürkoğlu    | Developer     |   [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/berat-öztürkoğlu-2811ab243/)     |
 
 ## Oyun İsmi
 
@@ -21,7 +22,7 @@
 
 ## Oyun Logosu
 
-Tasarlanmadı.  
+![LOGO](https://github.com/eyyss/BootcampGroup30/blob/main/Assets/_Game/Sprites/Logo.png)  
 
 ## Oyun Açıklaması
 
