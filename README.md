@@ -4,7 +4,7 @@
 
 ## **Takım Logosu**
 
-Karar verilmedi.
+![LOGO](https://github.com/eyyss/BootcampGroup30/blob/main/Assets/_Game/Sprites/Logo.png)
 
 ## Takım Elemanları
 
